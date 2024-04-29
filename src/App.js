@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import DataTable from "react-data-table-component";
 import "react-data-table-component-extensions/dist/index.css";
-import "./App.css";
 import { jsPDF } from "jspdf";
 import ExportData from "./ExportToExcel";
 import { PDFExport } from "./ExportPDF";
@@ -79,7 +78,7 @@ function App() {
                     onChange={(e) => setInputNumberCount(e.target.value)}
                   />
                 </div>
-                <div className="col-10 d-flex">
+                <div className="col-10 col-sm-10 d-flex">
                   <button
                     type="submit"
                     class="btn btn-primary mb-3 mx-1"
